@@ -166,6 +166,13 @@ header {
     margin-bottom: 15px;
 }
 
+/* three reasons resume */
+
+.three-reasons-resume-icon {
+    font-size: 26px;
+    color: #9b59b6;
+}
+
 /* --- Personal info --- */
 
 .bg-color-personal-info {
