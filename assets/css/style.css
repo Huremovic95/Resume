@@ -269,25 +269,50 @@ footer {
     padding: 20px;
 }
 
-/* --- Portfolio-projects --- */
+/* --- Work History --- */
 
-.value a {
-    text-decoration: none;
-    color: inherit;
+.timeline-item {
+    padding: 4em 2em 0em 2em;
+    position: relative;
+    border-left: 1px solid;
+}
+
+.timeline-item h4 {
+    text-transform: uppercase;
+}
+
+.timeline-item p {
+    padding: 0;
     margin: 0;
-    transition: all 0.4s ease-in-out;
-    -moz-transition: all 0.4s ease-in-out;
-    -webkit-transition: all 0.4s ease-in-out;
-    -o-transition: all 0.4s ease-in-out;
 }
 
-.value a:hover {
-    color: #9b59b6;
-    border-bottom: solid 1px #9b59b6;
+.timeline-item::before {
+    content: attr(data-dates);
+    position: absolute;
+    left: 2.5em;
+    top: 3em;
+    display: block;
+    font-family: "Exo", sans-serif;
+    font-weight: 500;
+    font-size: 0.8em;
+    padding: 0;
+    margin: 0;
 }
 
-.merrit-grade {
-  color:rgb(5, 121, 5);
+.timeline-item::after {
+    width: 12px;
+    height: 12px;
+    display: block;
+    top: 2.4em;
+    position: absolute;
+    left: -6px;
+    border-radius: 12px;
+    content:"";
+    background-color: #111111;
+}
+
+.history-item {
+    margin-bottom: 35px;
 }
 
 /* --- Skills --- */
@@ -311,4 +336,25 @@ footer {
 
 .progress-section {
     margin: 40px 20px;
+}
+
+/* --- Portfolio-projects --- */
+
+.value a {
+    text-decoration: none;
+    color: inherit;
+    margin: 0;
+    transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+}
+
+.value a:hover {
+    color: #9b59b6;
+    border-bottom: solid 1px #9b59b6;
+}
+
+.merrit-grade {
+  color:rgb(5, 121, 5);
 }
